@@ -9,9 +9,9 @@ package practica;
  *
  * @author unaif
  */
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import javax.swing.JFrame;
+import java.awt.*;
+import javax.swing.*;
+
 
 public class VentanaPrincipal extends JFrame{
     
@@ -24,7 +24,19 @@ public class VentanaPrincipal extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         this.setLocationRelativeTo(null);
         
+        
+        
+        
+        BorderLayout blPagPrincipal = new BorderLayout();
+        JPanel jpPagPrincipal = new JPanel(blPagPrincipal);
+        blPagPrincipal.setHgap(5); blPagPrincipal.setVgap(5);
+        JPanel centerPanel = new JPanel();
+        jpPagPrincipal.add(centerPanel, BorderLayout.CENTER);
+        centerPanel.add(new JButton("Centro"));
+        
+        
         this.add(panel, BorderLayout.CENTER);
+        this.
     }
 
     public static void main(String [] args){
