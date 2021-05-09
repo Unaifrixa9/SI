@@ -1,0 +1,36 @@
+package ventana;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class VentanaInicio extends JPanel {
+	
+	public VentanaInicio() {
+		super(new BorderLayout(5, 5));
+	}
+	
+	public void crearVentana() {
+			
+	        JPanel center_panel = new JPanel(new GridLayout(7,2));
+	        center_panel.setOpaque(false);
+	        this.add(center_panel, BorderLayout.CENTER);
+	        
+	        ImageIcon logo = new ImageIcon("/imagenes/java.png");
+	        
+	        JButton logo_label = new JButton(logo);
+	        center_panel.add(logo_label);
+	        
+	        
+	}
+	
+	@Override
+	   public void paint(Graphics g){
+	      Dimension dimension = this.getSize();
+	      
+	        ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/fondo.jpg"));
+	        g.drawImage(icon.getImage(), 0, 0, dimension.width, dimension.height, null);
+	        setOpaque(false);
+	        super.paint(g);
+	   }
+		
+}

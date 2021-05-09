@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ventana;
+
+/**
+ *
+ * @author unaif
+ */
+import java.awt.*;
+import javax.swing.*;
+
+
+public class VentanaPrincipal extends JFrame{
+    
+    FondoPanel panel = new FondoPanel();
+       
+    public VentanaPrincipal(){
+        
+        this.setTitle("Ventana Principal");
+        this.setSize(new Dimension(600, 400));
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
+        this.setLocationRelativeTo(null);
+        
+        
+        BorderLayout blPagPrincipal = new BorderLayout();
+        JPanel jpPagPrincipal = new JPanel(blPagPrincipal);
+        blPagPrincipal.setHgap(5); blPagPrincipal.setVgap(5);
+        
+        JPanel centerPanel = new JPanel(new GridBagLayout());
+        jpPagPrincipal.add(centerPanel, BorderLayout.CENTER);
+        
+        GridBagConstraints c = new GridBagConstraints();
+        
+        centerPanel.add(new JButton("Centro"));
+        
+        
+        this.add(panel, BorderLayout.CENTER);
+        panel.add(jpPagPrincipal);
+    }
+
+    public static void main(String [] args){
+        VentanaPrincipal frame = new VentanaPrincipal();
+        frame.setVisible(true);
+    }
+    
+    
+}
+ 

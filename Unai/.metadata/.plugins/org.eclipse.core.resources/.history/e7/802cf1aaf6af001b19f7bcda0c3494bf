@@ -1,0 +1,87 @@
+package jmoyano.tutorial.swing;
+
+import javax.swing.*;
+import java.awt.*;
+
+/**
+ * Ejercicio 2 del tutorial de Java Swing
+ * 
+ * @author Jose M. Moyano
+ *
+ */
+public class Exercise2 {
+  public static void main(String[] args) {
+    JFrame jf = new JFrame("Ejercicio2");
+    
+    
+    //Estructura
+    BorderLayout bl = new BorderLayout(5, 5);
+    bl.setHgap(5);
+    bl.setVgap(5);
+    
+    //Panel común
+    
+    
+    //Norte
+    JLabel ej_label = new JLabel("Ejercicio2");
+    ej_label.setHorizontalAlignment(JLabel.CENTER);
+    ej_label.setVerticalAlignment(JLabel.CENTER);
+    
+    //Izqda y Dcha
+    jp.add(new JPanel(), BorderLayout.EAST);
+    jp.add(new JPanel(), BorderLayout.WEST);
+    
+    //Sur
+    JPanel south_panel = new JPanel();
+    FlowLayout south_layout = new FlowLayout();
+    south_layout.setAlignment(FlowLayout.RIGHT);
+    south_panel.setLayout(south_layout);
+    south_panel.add(new JButton("Cancelar"));
+    south_panel.add(new JButton("Aceptar"));
+    jp.add(south_panel, BorderLayout.SOUTH);
+    
+    //Centro
+    jp.add(ej_label, BorderLayout.NORTH);
+    
+    JPanel center_panel = new JPanel(new GridBagLayout());
+    jp.add(center_panel, BorderLayout.CENTER);
+    GridBagConstraints c = new GridBagConstraints();
+
+    c.fill = GridBagConstraints.BOTH;
+    c.insets = new Insets(1, 2, 1, 2);
+    
+    c.gridx = 0;
+    c.gridy = 0;
+    c.gridheight = 1;
+    c.gridwidth = 1;
+    center_panel.add(new JButton("A"), c);
+    
+    c.gridx = 1;
+    c.gridy = 0;
+    c.gridheight = 1;
+    c.gridwidth = 1;
+    center_panel.add(new JButton("B"), c);
+    
+    c.gridx = 0;
+    c.gridy = 1;
+    c.gridheight = 1;
+    c.gridwidth = 2;
+    center_panel.add(new JButton("C"), c);
+    
+    c.gridx = 2;
+    c.gridy = 0;
+    c.gridheight = 2;
+    c.gridwidth = 1;
+    center_panel.add(new JButton("D"), c);
+    
+    JPanel jp = new JPanel(bl);
+    jf.add(jp);
+    
+    jf.setSize(400, 300);
+    jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    jf.setVisible(true);
+    
+  }
+}
+
+
