@@ -1,0 +1,65 @@
+package ventana;
+
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+
+import javax.swing.*;
+
+
+public class PaginaPrincipal extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public PaginaPrincipal() {
+		super(new BorderLayout(5, 5));
+	}
+
+	public void crearPagina(JPanel j) {
+		
+		JPanel center_panel = new JPanel(new GridBagLayout());
+		center_panel.setOpaque(false);
+		GridBagConstraints c = new GridBagConstraints();
+		
+		c.fill = GridBagConstraints.BOTH;
+	    c.insets = new Insets(1, 2, 1, 2);
+	    
+	    c.gridx = 0;
+	    c.gridy = 0;
+	    c.gridheight = 1;
+	    c.gridwidth = 1;
+		j.add(new JButton("Correo"), c);
+		
+		c.gridx = 1;
+	    c.gridy = 0;
+	    c.gridheight = 1;
+	    c.gridwidth = 1;
+        j.add(new JButton("Moodle"), c);
+        
+        c.gridx = 0;
+	    c.gridy = 1;
+	    c.gridheight = 1;
+	    c.gridwidth = 2;
+        j.add(new JButton("Calendario"), c);
+        
+        c.gridx = 2;
+	    c.gridy = 0;
+	    c.gridheight = 2;
+	    c.gridwidth = 1;
+        j.add(new JButton("Sigma"), c);
+	}
+	
+	public void paint(Graphics g){
+	      Dimension dimension = this.getSize();
+	      
+	        ImageIcon icon = new ImageIcon(getClass().getResource("../imagenes/fondo.jpg"));
+	        g.drawImage(icon.getImage(), 0, 0, dimension.width, dimension.height, null);
+	        setOpaque(false);
+	        super.paintChildren(g);
+	 }
+}

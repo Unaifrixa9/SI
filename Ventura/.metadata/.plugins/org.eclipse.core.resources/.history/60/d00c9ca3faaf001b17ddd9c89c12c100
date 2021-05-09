@@ -1,0 +1,19 @@
+package ventana;
+
+import javax.swing.*;
+
+
+public class PaginaPrincipal extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void paginaPrincipal() {
+		this.add(new JButton("Correo"));
+        this.add(new JButton("Moodle"));
+        this.add(new JButton("Calendario"));
+        this.add(new JButton("Sigma"));
+	}
+}

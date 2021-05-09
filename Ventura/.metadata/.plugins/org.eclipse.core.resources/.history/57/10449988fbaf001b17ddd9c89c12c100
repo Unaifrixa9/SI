@@ -1,0 +1,33 @@
+package ventana;
+
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+
+import javax.swing.*;
+
+
+public class PaginaPrincipal extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void paginaPrincipal(JPanel j) {
+		
+		GridBagConstraints c = new GridBagConstraints();
+		
+		c.fill = GridBagConstraints.BOTH;
+	    c.insets = new Insets(1, 2, 1, 2);
+	    
+	    c.gridx = 0;
+	    c.gridy = 0;
+	    c.gridheight = 1;
+	    c.gridwidth = 1;
+	    
+		j.add(new JButton("Correo"), c);
+        j.add(new JButton("Moodle"));
+        j.add(new JButton("Calendario"));
+        j.add(new JButton("Sigma"));
+	}
+}

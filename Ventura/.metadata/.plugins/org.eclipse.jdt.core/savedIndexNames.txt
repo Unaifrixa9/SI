@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Ventura\Ingenieria\Tercer curso\Sistemas Interactivos\Practicas\Ventura\.metadata\.plugins\org.eclipse.jdt.core
+3933968313.index
+1054686095.index
+17711123.index

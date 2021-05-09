@@ -1,0 +1,21 @@
+package ventana;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PaginaPrincipal extends JPanel{
+	
+	GridBagLayout grid;
+
+	public void paginaPrincipal() {
+		grid = new GridBagLayout();
+		this.crearVentana();
+	}
+	
+	public void crearVentana() {
+		this.add(new JButton("Hola"));
+	}
+}

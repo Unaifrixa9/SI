@@ -1,0 +1,20 @@
+package ventana;
+
+import javax.swing.*;
+
+
+public class PaginaPrincipal extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void paginaPrincipal() {
+		this.crearVentana();
+	}
+	
+	public void crearVentana() {
+		this.add(new JButton("Botón_1"));
+	}
+}
