@@ -18,13 +18,12 @@ public class VentanaPrincipal extends JFrame {
 	
     FondoPanel panel = new FondoPanel();
        
-    public VentanaPrincipal(){
-
-        PaginaPrincipal p = new PaginaPrincipal();
-        this.add(p, BorderLayout.CENTER);
+    public VentanaPrincipal(){      
+        Sigma b = new Sigma();
+        this.add(b, BorderLayout.CENTER);
         
-        this.setTitle("Página principal");
-        this.setSize(new Dimension(600, 400));
+        this.setTitle("Bandeja de entrada");
+        this.setSize(new Dimension(800, 550));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         this.setLocationRelativeTo(null);
         
