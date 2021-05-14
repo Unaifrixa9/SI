@@ -110,6 +110,16 @@ public class Sigma extends javax.swing.JPanel {
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones10 = new ImageIcon(conversion);
         jButton_opciones10 = new javax.swing.JButton(imagen_opciones10);
+        ImageIcon imagen_opciones11 = new ImageIcon(getClass().getResource("../imagenes/expediente.png"));
+        conversion = imagen_opciones11.getImage();
+        conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+        imagen_opciones11 = new ImageIcon(conversion);
+        jButton_opciones11 = new javax.swing.JButton(imagen_opciones11);
+        ImageIcon imagen_opciones12 = new ImageIcon(getClass().getResource("../imagenes/matricula.png"));
+        conversion = imagen_opciones12.getImage();
+        conversion = conversion.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
+        imagen_opciones12 = new ImageIcon(conversion);
+        jButton_opciones12 = new javax.swing.JButton(imagen_opciones12);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setOpaque(false);
@@ -184,7 +194,7 @@ public class Sigma extends javax.swing.JPanel {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 247, Short.MAX_VALUE)
                 .addComponent(jLabel12)
                 .addContainerGap())
         );
@@ -358,7 +368,7 @@ public class Sigma extends javax.swing.JPanel {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
@@ -405,6 +415,20 @@ public class Sigma extends javax.swing.JPanel {
             }
         });
 
+        jButton_opciones11.setContentAreaFilled(false);
+        jButton_opciones11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_opciones11ActionPerformed(evt);
+            }
+        });
+
+        jButton_opciones12.setContentAreaFilled(false);
+        jButton_opciones12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_opciones12ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -417,8 +441,10 @@ public class Sigma extends javax.swing.JPanel {
                     .addComponent(jButton_opciones7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_opciones8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_opciones9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_opciones10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton_opciones10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_opciones11, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_opciones12, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,6 +461,10 @@ public class Sigma extends javax.swing.JPanel {
                 .addComponent(jButton_opciones9, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_opciones10, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton_opciones11, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton_opciones12, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -518,9 +548,19 @@ public class Sigma extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_opciones10ActionPerformed
 
+    private void jButton_opciones11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_opciones11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_opciones11ActionPerformed
+
+    private void jButton_opciones12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_opciones12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_opciones12ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_opciones10;
+    private javax.swing.JButton jButton_opciones11;
+    private javax.swing.JButton jButton_opciones12;
     private javax.swing.JButton jButton_opciones5;
     private javax.swing.JButton jButton_opciones6;
     private javax.swing.JButton jButton_opciones7;

@@ -106,7 +106,7 @@
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -205,7 +205,7 @@
                               <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="257" max="32767" attributes="0"/>
+                          <EmptySpace pref="247" max="32767" attributes="0"/>
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -483,7 +483,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton_opciones6" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
@@ -492,8 +492,10 @@
                           <Component id="jButton_opciones8" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
                           <Component id="jButton_opciones9" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
                           <Component id="jButton_opciones10" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
+                          <Component id="jButton_opciones11" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
+                          <Component id="jButton_opciones12" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="20" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -512,6 +514,10 @@
                       <Component id="jButton_opciones9" min="-2" pref="55" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton_opciones10" min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton_opciones11" min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton_opciones12" min="-2" pref="55" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -576,6 +582,26 @@
                 <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(imagen_opciones10)"/>
                 <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="ImageIcon imagen_opciones10 = new ImageIcon(getClass().getResource(&quot;../imagenes/enviados.png&quot;));&#xa;conversion = imagen_opciones10.getImage();&#xa;conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);&#xa;imagen_opciones10 = new ImageIcon(conversion);"/>
                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton_opciones10.setContentAreaFilled(false);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton_opciones11">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_opciones11ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(imagen_opciones11)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="ImageIcon imagen_opciones11 = new ImageIcon(getClass().getResource(&quot;../imagenes/expediente.png&quot;));&#xa;conversion = imagen_opciones11.getImage();&#xa;conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);&#xa;imagen_opciones11 = new ImageIcon(conversion);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton_opciones11.setContentAreaFilled(false);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton_opciones12">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_opciones12ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(imagen_opciones12)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="ImageIcon imagen_opciones12 = new ImageIcon(getClass().getResource(&quot;../imagenes/matricula.png&quot;));&#xa;conversion = imagen_opciones12.getImage();&#xa;conversion = conversion.getScaledInstance(100, 100, Image.SCALE_SMOOTH);&#xa;imagen_opciones12 = new ImageIcon(conversion);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton_opciones12.setContentAreaFilled(false);"/>
               </AuxValues>
             </Component>
           </SubComponents>
