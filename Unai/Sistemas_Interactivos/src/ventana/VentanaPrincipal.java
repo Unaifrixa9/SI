@@ -20,7 +20,7 @@ public class VentanaPrincipal extends JFrame{
         
     	//this.setContentPane(panel);
     	
-	Inicio inicio = new Inicio();
+	EscribirMensaje inicio = new EscribirMensaje();
 
         //panel.setLayout(new BorderLayout(5, 5));
         this.add(inicio, BorderLayout.CENTER);
