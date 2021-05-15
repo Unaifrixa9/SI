@@ -19,7 +19,7 @@ public class VentanaPrincipal extends JFrame {
     FondoPanel panel = new FondoPanel();
        
     public VentanaPrincipal(){      
-        Sigma b = new Sigma();
+        BandejaEntrada b = new BandejaEntrada();
         this.add(b, BorderLayout.CENTER);
         
         this.setTitle("Bandeja de entrada");
