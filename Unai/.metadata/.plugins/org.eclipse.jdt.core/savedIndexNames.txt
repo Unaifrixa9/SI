@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\unaif\Documents\Universidad\4.2\SI\Codigo\SI\Unai\.metadata\.plugins\org.eclipse.jdt.core
-1695662857.index
-3780906463.index
-3933968313.index

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;java.png&apos; to &apos;Sistemas_Interactivos/src/imagenes&apos;&#x0D;&#x0A;- Original project: &apos;Nueva carpeta&apos;&#x0D;&#x0A;- Destination element: &apos;Sistemas_Interactivos/src/imagenes&apos;&#x0D;&#x0A;- Original element: &apos;java.png&apos;" description="Copy file" destination="=Sistemas_Interactivos/src&lt;imagenes" element1="images/java.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1620488660602" units="0" version="1.0"/>
-</session>
