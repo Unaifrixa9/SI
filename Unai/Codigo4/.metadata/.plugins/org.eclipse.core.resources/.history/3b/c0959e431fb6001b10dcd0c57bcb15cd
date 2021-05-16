@@ -1,0 +1,43 @@
+package ventana;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class InicioSesion implements ActionListener{
+	
+	JTextField user;
+	JPasswordField pass;
+    JPanel old_panel;
+   int new_panel;
+    JFrame frame;
+	
+	public InicioSesion(JTextField user, JPasswordField pass, JPanel old_panel, 
+	       int new_panel, JFrame frame) {
+		this.user = user;
+		this.pass = pass;
+		this.old_panel = old_panel;
+        this.new_panel = new_panel;
+        this.frame = frame;
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if((user.getText().equals("i72frpeu")) && (pass.getText().equals("pass"))) {
+			old_panel.setVisible(false);
+	        frame.setContentPane(new_panel);
+	        frame.revalidate();
+		}else {
+			JOptionPane.showMessageDialog(frame, "Usuario o Password Erronea", "Error",
+                JOptionPane.WARNING_MESSAGE);
+		}
+	}
+
+}

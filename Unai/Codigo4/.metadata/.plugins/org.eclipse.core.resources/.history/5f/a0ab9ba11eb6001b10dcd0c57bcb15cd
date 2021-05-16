@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ventana;
+
+/**
+ *
+ * @author unaif
+ */
+import java.awt.*;
+import javax.swing.*;
+
+
+public class VentanaPrincipal extends JFrame {
+	Menu in = new Menu(this);
+	BandejaEntrada be = new BandejaEntrada(this);
+	       
+    public VentanaPrincipal(){
+    	
+    	
+    	
+    	this.setContentPane(in);
+        
+        this.setTitle("UCO");
+        this.setSize(new Dimension(800, 550));
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
+        this.setLocationRelativeTo(null);
+        
+    }
+    
+    public void FocusPanel(JPanel old_panel, 
+            int new_panel) {
+    			old_panel.setVisible(false);
+    			this.setContentPane(be);
+    			this.revalidate();
+       }
+
+    public static void main(String [] args){
+        VentanaPrincipal frame = new VentanaPrincipal();
+        frame.setVisible(true);
+    }
+    
+    
+}
+ 

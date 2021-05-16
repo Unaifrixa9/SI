@@ -1,0 +1,72 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ventana;
+
+/**
+ *
+ * @author unaif
+ */
+import java.awt.*;
+import javax.swing.*;
+
+
+public class VentanaPrincipal extends JFrame {
+	
+	Inicio in = new Inicio(this);
+	Menu menu = new Menu(this);
+	BandejaEntrada be = new BandejaEntrada(this);
+	Enviados en = new Enviados(this);
+	Calendario cal = new Calendario(this);
+	EscribirMensaje emen = new EscribirMensaje(this);
+	LeerMensaje lmen = new LeerMensaje(this);
+	Sigma sig = new Sigma(this);
+	VerArticulo verA = new VerArticulo(this);
+	       
+    public VentanaPrincipal(){
+    	
+    	this.setContentPane(in);
+        
+        this.setTitle("UCO");
+        this.setSize(new Dimension(800, 550));
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
+        this.setLocationRelativeTo(null);
+        
+    }
+    
+    public void FocusPanel(JPanel old_panel, 
+            int new_panel) {
+    			this.remove(old_panel);
+    			switch (new_panel){
+    			
+    			
+    			}
+    				
+    			/*if(new_panel == 0) {
+    				this.setContentPane(menu);
+    			}
+    			if(new_panel == 1) {
+    				this.setContentPane(be);
+    			}
+    			if(new_panel == 2) {
+    				this.setContentPane(en);
+    			}
+    			if(new_panel == 3) {
+    				this.setContentPane(cal);
+    			}
+    			if(new_panel == 3) {
+    				this.setContentPane(cal);
+    			}*/
+    			this.revalidate();
+       }
+
+    public static void main(String [] args){
+        VentanaPrincipal frame = new VentanaPrincipal();
+        frame.setVisible(true);
+    }
+    
+    
+}
+ 
