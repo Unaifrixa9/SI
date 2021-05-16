@@ -10,8 +10,6 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
 
 /**
  *
@@ -20,6 +18,10 @@ import javax.swing.JFrame;
 public class BandejaEntrada extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form BandejaEntrada
      */
     public BandejaEntrada(VentanaPrincipal jf) {

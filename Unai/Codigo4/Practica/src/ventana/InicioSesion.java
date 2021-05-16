@@ -3,7 +3,6 @@ package ventana;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
@@ -30,7 +29,7 @@ public class InicioSesion implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		if((user.getText().equals("i72frpeu")) && (pass.getText().equals("pass"))) {
+		if((user.getText().equals("user")) && (pass.getText().equals("pass"))) {
 			frame.FocusPanel(old_panel, new_panel);
 		}else {
 			JOptionPane.showMessageDialog(frame, "Usuario o Password Erronea", "Error",

@@ -15,6 +15,10 @@ import javax.swing.*;
 
 public class VentanaPrincipal extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	Inicio in = new Inicio(this);
 	Menu menu = new Menu(this);
 	BandejaEntrada be = new BandejaEntrada(this);
@@ -25,7 +29,7 @@ public class VentanaPrincipal extends JFrame {
 	Sigma sig = new Sigma(this);
 	VerArticulo verA = new VerArticulo(this);
 	VerExamenes verEx = new VerExamenes(this);
-	AñadirEvento aE = new AñadirEvento(this);
+	AnadirEvento aE = new AnadirEvento(this);
 	       
     public VentanaPrincipal(){
     	
@@ -58,6 +62,7 @@ public class VentanaPrincipal extends JFrame {
     				cal.opaque();
     				break;
     			case 4:
+    				System.out.print("YDywg");
     				this.setContentPane(emen);
     				emen.opaque();
     				break;
@@ -74,11 +79,14 @@ public class VentanaPrincipal extends JFrame {
     				verA.opaque();
     				break;
     			case 8:
+    				System.out.print("Bien");
     				this.setContentPane(verEx);
     				verEx.opaque();
+    				break;
     			case 9:
     				this.setContentPane(aE);
     				aE.opaque();
+    				break;
     			}
     			this.revalidate();
        }

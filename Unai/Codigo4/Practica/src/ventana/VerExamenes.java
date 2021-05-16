@@ -18,6 +18,10 @@ import javax.swing.JOptionPane;
 public class VerExamenes extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form VerArticulo
      */
     public VerExamenes(VentanaPrincipal jf) {

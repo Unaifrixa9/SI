@@ -9,9 +9,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 /**
  *
@@ -20,6 +18,10 @@ import javax.swing.JPanel;
 public class LeerMensaje extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form LeerMensaje
      */
     public LeerMensaje(VentanaPrincipal jf) {
@@ -90,9 +92,9 @@ public class LeerMensaje extends javax.swing.JPanel {
 
         jLabel4.setText("Asunto:");
 
-        jLabel6.setText("Remitente");
+        jLabel6.setText("Jose Maria Luna Ariza");
 
-        jLabel7.setText("Asunto");
+        jLabel7.setText("Resolución duda practica 5");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -131,6 +133,10 @@ public class LeerMensaje extends javax.swing.JPanel {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+        
+        jTextArea1.setText("Hola Alumno Anonimo, gracias por preguntarme esta duda. \n Tienes que usar "
+        		+ "todas las funciones que puedas del paquete y crear pocas funciones propias \n"
+        		+ "Un saludo");
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setVisible(false);

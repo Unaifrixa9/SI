@@ -12,7 +12,6 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 
 /**
  *
@@ -21,6 +20,11 @@ import javax.swing.JFrame;
 public class Inicio extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Creates new form NewJPanel
      */
     public Inicio(VentanaPrincipal jf) {

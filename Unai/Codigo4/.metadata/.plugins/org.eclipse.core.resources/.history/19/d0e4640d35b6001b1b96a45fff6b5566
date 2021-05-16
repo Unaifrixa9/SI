@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ventana;
+
+import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+/**
+ *
+ * @author ventu
+ */
+public class GuardarMensaje implements ActionListener {
+
+    public static boolean guardarMensaje(JTextField destinatario, JTextField asunto, JTextArea mensaje) {
+        try{
+            BufferedWriter bw = new BufferedWriter(new FileWriter("message.txt"));
+            bw.write(destinatario.getText());
+            bw.write("\n");
+            bw.write(asunto.getText());
+            bw.write("\n");
+            bw.write(mensaje.getText());
+            bw.close();
+            
+            return true;
+        }catch(IOException ex){
+            System.err.println(ex);
+            return false;
+        }
+    }
+
+    
+}

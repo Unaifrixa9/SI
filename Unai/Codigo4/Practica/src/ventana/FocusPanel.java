@@ -1,16 +1,10 @@
 package ventana;
 
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-/**
- * Listener para botón que mueve el foco a un JPanel dentro de otro JPanel
- * 
- * @author Jose M. Moyano
- *
- */
+
 public class FocusPanel implements ActionListener{
     
     

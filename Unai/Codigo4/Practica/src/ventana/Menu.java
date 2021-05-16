@@ -8,11 +8,7 @@ package ventana;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
 
 /**
  *
@@ -20,6 +16,10 @@ import javax.swing.JFrame;
  */
 public class Menu extends javax.swing.JPanel {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form prueba2
      */
 	

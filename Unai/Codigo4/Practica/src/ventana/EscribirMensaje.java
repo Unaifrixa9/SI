@@ -9,9 +9,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 /**
  *
@@ -20,6 +18,10 @@ import javax.swing.JPanel;
 public class EscribirMensaje extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form EscribirMensaje
      */
     public EscribirMensaje(VentanaPrincipal jf) {
@@ -91,9 +93,9 @@ public class EscribirMensaje extends javax.swing.JPanel {
 
         jLabel4.setText("Asunto:");
 
-        jTextField1.setText("Usuario");
+        jTextField1.setText("");
 
-        jTextField2.setText("Asunto");
+        jTextField2.setText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -142,6 +144,7 @@ public class EscribirMensaje extends javax.swing.JPanel {
 
         jButtonEnviar.setBackground(new java.awt.Color(0, 102, 255));
         jButtonEnviar.setText("Enviar");
+        jButtonEnviar.addActionListener(new GuardarMensaje(this, 1, jf, jTextField1, jTextField2, jTextArea1));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setVisible(false);

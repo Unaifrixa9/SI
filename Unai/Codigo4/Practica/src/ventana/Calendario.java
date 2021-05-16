@@ -8,11 +8,8 @@ package ventana;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-
 import java.awt.Image;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 /**
  *
@@ -21,6 +18,10 @@ import javax.swing.JPanel;
 public class Calendario extends javax.swing.JPanel {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
      * Creates new form Calendario
      */
     public Calendario(VentanaPrincipal jf) {
@@ -168,7 +169,7 @@ public class Calendario extends javax.swing.JPanel {
 
         jLabel3.setForeground(new java.awt.Color(51, 51, 255));
         jLabel3.setText("1º Enero");
-        jLabel3.addMouseListener(new VerMensajeAction(this, 8, jf));
+        jLabel3.addMouseListener(new VerMensajeAction(this,8, jf));
 
         jLabel4.setForeground(new java.awt.Color(51, 51, 255));
         jLabel4.setText("2º Febrero");
@@ -180,7 +181,7 @@ public class Calendario extends javax.swing.JPanel {
 
         jLabel6.setForeground(new java.awt.Color(51, 51, 255));
         jLabel6.setText("2º Julio");
-        jLabel6.addMouseListener(new VerMensajeAction(this, 8, jf));
+        jLabel6.addMouseListener(new VerMensajeAction(this,8, jf));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
