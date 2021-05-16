@@ -1,0 +1,3 @@
+Destinatario_1
+Asunto_1
+Cuerpo_mensaje_1
