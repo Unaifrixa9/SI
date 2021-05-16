@@ -31,7 +31,7 @@ public class Sigma extends javax.swing.JPanel {
         public void paint(Graphics g) {
 	Dimension dimension = this.getSize();
 	      
-	ImageIcon icon = new ImageIcon(getClass().getResource("../imagenes/fondo.jpg"));
+	ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/fondo.jpg"));
 	g.drawImage(icon.getImage(), 0, 0, dimension.width, dimension.height, null);
 	setOpaque(false);
 	super.paintChildren(g);
@@ -39,7 +39,7 @@ public class Sigma extends javax.swing.JPanel {
 
     private void initComponents(VentanaPrincipal jf) {
 
-        ImageIcon imagen_opciones13 = new ImageIcon(getClass().getResource("../imagenes/opciones.png"));
+        ImageIcon imagen_opciones13 = new ImageIcon(getClass().getResource("/imagenes/opciones.png"));
         Image conversion = imagen_opciones13.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones13 = new ImageIcon(conversion);
@@ -49,7 +49,7 @@ public class Sigma extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        ImageIcon nota = new ImageIcon(getClass().getResource("../imagenes/nota.png"));
+        ImageIcon nota = new ImageIcon(getClass().getResource("/imagenes/nota.png"));
         conversion = nota.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         nota = new ImageIcon(conversion);
@@ -83,42 +83,42 @@ public class Sigma extends javax.swing.JPanel {
         nota = new ImageIcon(conversion);
         jLabel15 = new javax.swing.JLabel(nota);
         jPanel3 = new javax.swing.JPanel();
-        ImageIcon imagen_opciones5 = new ImageIcon(getClass().getResource("../imagenes/calendario.png"));
+        ImageIcon imagen_opciones5 = new ImageIcon(getClass().getResource("/imagenes/calendario.png"));
         conversion = imagen_opciones5.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones5 = new ImageIcon(conversion);
         jButton_opciones5 = new javax.swing.JButton(imagen_opciones5);
-        ImageIcon imagen_opciones6 = new ImageIcon(getClass().getResource("../imagenes/correo.png"));
+        ImageIcon imagen_opciones6 = new ImageIcon(getClass().getResource("/imagenes/correo.png"));
         conversion = imagen_opciones6.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones6 = new ImageIcon(conversion);
         jButton_opciones6 = new javax.swing.JButton(imagen_opciones6);
-        ImageIcon imagen_opciones7 = new ImageIcon(getClass().getResource("../imagenes/moodle.png"));
+        ImageIcon imagen_opciones7 = new ImageIcon(getClass().getResource("/imagenes/moodle.png"));
         conversion = imagen_opciones7.getImage();
         conversion = conversion.getScaledInstance(100, 50, Image.SCALE_SMOOTH);
         imagen_opciones7 = new ImageIcon(conversion);
         jButton_opciones7 = new javax.swing.JButton(imagen_opciones7);
-        ImageIcon imagen_opciones8 = new ImageIcon(getClass().getResource("../imagenes/sigma.png"));
+        ImageIcon imagen_opciones8 = new ImageIcon(getClass().getResource("/imagenes/sigma.png"));
         conversion = imagen_opciones8.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones8 = new ImageIcon(conversion);
         jButton_opciones8 = new javax.swing.JButton(imagen_opciones8);
-        ImageIcon imagen_opciones9 = new ImageIcon(getClass().getResource("../imagenes/busqueda.png"));
+        ImageIcon imagen_opciones9 = new ImageIcon(getClass().getResource("/imagenes/busqueda.png"));
         conversion = imagen_opciones9.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones9 = new ImageIcon(conversion);
         jButton_opciones9 = new javax.swing.JButton(imagen_opciones9);
-        ImageIcon imagen_opciones10 = new ImageIcon(getClass().getResource("../imagenes/enviados.png"));
+        ImageIcon imagen_opciones10 = new ImageIcon(getClass().getResource("/imagenes/enviados.png"));
         conversion = imagen_opciones10.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones10 = new ImageIcon(conversion);
         jButton_opciones10 = new javax.swing.JButton(imagen_opciones10);
-        ImageIcon imagen_opciones11 = new ImageIcon(getClass().getResource("../imagenes/expediente.png"));
+        ImageIcon imagen_opciones11 = new ImageIcon(getClass().getResource("/imagenes/expediente.png"));
         conversion = imagen_opciones11.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_opciones11 = new ImageIcon(conversion);
         jButton_opciones11 = new javax.swing.JButton(imagen_opciones11);
-        ImageIcon imagen_opciones12 = new ImageIcon(getClass().getResource("../imagenes/matricula.png"));
+        ImageIcon imagen_opciones12 = new ImageIcon(getClass().getResource("/imagenes/matricula.png"));
         conversion = imagen_opciones12.getImage();
         conversion = conversion.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
         imagen_opciones12 = new ImageIcon(conversion);

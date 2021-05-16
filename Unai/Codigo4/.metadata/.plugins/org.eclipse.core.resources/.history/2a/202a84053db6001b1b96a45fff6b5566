@@ -31,7 +31,7 @@ public class Menu extends javax.swing.JPanel {
     public void paint(Graphics g) {
     	Dimension dimension = this.getSize();
 	      
-    	ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/fondo.jpg"));
+    	ImageIcon icon = new ImageIcon(getClass().getResource("../imagenes/fondo.jpg"));
     	g.drawImage(icon.getImage(), 0, 0, dimension.width, dimension.height, null);
     	setOpaque(false);
     	super.paintChildren(g);
@@ -41,22 +41,22 @@ public class Menu extends javax.swing.JPanel {
     	    	
         jFrame1 = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
-        ImageIcon imagen_calendario = new ImageIcon(getClass().getResource("/imagenes/calendario.png"));
+        ImageIcon imagen_calendario = new ImageIcon(getClass().getResource("../imagenes/calendario.png"));
         Image conversion = imagen_calendario.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_calendario = new ImageIcon(conversion);
         jButton_calendario = new javax.swing.JButton(imagen_calendario);
-        ImageIcon imagen_moodle = new ImageIcon(getClass().getResource("/imagenes/moodle.png"));
+        ImageIcon imagen_moodle = new ImageIcon(getClass().getResource("../imagenes/moodle.png"));
         conversion = imagen_moodle.getImage();
         conversion = conversion.getScaledInstance(150, 75, Image.SCALE_SMOOTH);
         imagen_moodle = new ImageIcon(conversion);
         jButton_moodle = new javax.swing.JButton(imagen_moodle);
-        ImageIcon imagen_correo = new ImageIcon(getClass().getResource("/imagenes/correo.png"));
+        ImageIcon imagen_correo = new ImageIcon(getClass().getResource("../imagenes/correo.png"));
         conversion = imagen_correo.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_correo = new ImageIcon(conversion);
         jButton_correo = new javax.swing.JButton(imagen_correo);
-        ImageIcon imagen_sigma = new ImageIcon(getClass().getResource("/imagenes/sigma.png"));
+        ImageIcon imagen_sigma = new ImageIcon(getClass().getResource("../imagenes/sigma.png"));
         conversion = imagen_sigma.getImage();
         conversion = conversion.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         imagen_sigma = new ImageIcon(conversion);
